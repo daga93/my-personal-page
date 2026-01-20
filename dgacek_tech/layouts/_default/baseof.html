@@ -41,7 +41,7 @@
     <a href="{{ "" | relURL }}">
       {{ $avatar := resources.Get .Site.Params.avatar | default (resources.Get "avatar.jpg") }}
       {{ if $avatar }}
-      {{ $processed := $avatar.Fill "200x200 webp q90" }}
+      {{ $processed := $avatar.Fill "336x336 webp q90" }}
       <img class="app-header-avatar" src="{{ $processed.RelPermalink }}" alt="{{ .Site.Params.author | default " John" }}" />
       {{ else }}
       <img class="app-header-avatar" src="{{ .Site.Params.avatar | relURL }}" alt="{{ .Site.Params.author | default " John" }}" />
