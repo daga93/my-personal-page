@@ -1,6 +1,5 @@
 +++
 date = '2026-01-19T18:50:14+01:00'
-draft = true
 menus = 'Blog'
 title = 'Hello World! Pierwszy próbny post na stronie - z HUGO.'
 +++
