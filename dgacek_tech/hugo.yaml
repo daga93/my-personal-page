@@ -1,0 +1,32 @@
+baseURL: 'https://dgacek.tech'
+languageCode: 'pl-pl'
+title: 'Dawid Gacek - Informacje, Blog, O mnie'
+theme: 'm10c'
+sectionPagesMenu: 'main'
+pluralizeListTitles: false
+
+params:
+  description: "Inżynier Opgrogramowania Backend | Go & Python. Skupiam się na tym, by narzędzia IT które tworzę i dostarczam przynosiły wartość."
+  avatar: images/photo/my_photo.jpg
+  favicon: /favicon.ico
+  style:
+    darkestColor: "#1c2128"
+    darkColor: "#22272e"
+    lightColor: "#adbac7"
+    lightestColor: "#57ab5a"
+    primaryColor: "#6cb6ff"
+  social:
+    - url: https://www.facebook.com/dawid.gacek.12
+      name: Mój Facebook
+      icon: brand-facebook
+    - url: https://github.com/daga93
+      name: Mój Github
+      icon: brand-github
+    - url: https://www.linkedin.com/in/dawid-gacek-5a3710a1/
+      name: Mój LinkedIn
+      icon: brand-linkedin
+    - url: https://www.linkedin.com/in/dawid-gacek-5a3710a1/
+      name: Mój LinkedIn
+      icon: brand-linkedin
+
+

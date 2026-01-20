@@ -1,0 +1,16 @@
+# Folder wyjściowy (miejsce, gdzie Hugo generuje gotową stronę)
+# Nie dodajemy go do Git, bo zaśmieca historię tysiącami plików HTML
+public/
+
+# Folder zasobów generowany podczas obróbki obrazów (np. Twoje przycięte zdjęcia)
+resources/
+
+# Pliki tymczasowe i cache
+.hugo_build.lock
+hugo_stats.json
+
+# Jeśli używasz macOS
+.DS_Store
+
+# Folder z modułami (jeśli zaczniesz używać Hugo Modules)
+_vendor/

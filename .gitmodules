@@ -1,0 +1,3 @@
+[submodule "dgacek_tech/themes/m10c"]
+	path = dgacek_tech/themes/m10c
+	url = https://github.com/vaga/hugo-theme-m10c
