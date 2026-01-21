@@ -1,0 +1,16 @@
+{{ $image := resources.Get (printf "images/%s" (.Get "src")) }}
+{{ $params := .Get "fparams" | default "800x webp" }}
+
+{{ if $image }}
+  {{ $scaled := $image.Resize $params }}
+  
+  <figure>
+    <img src="{{ $scaled.RelPermalink }}" 
+         width="{{ $scaled.Width }}" 
+         height="{{ $scaled.Height }}" 
+         alt="{{ .Get "alt" }}">
+    {{ with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
+  </figure>
+{{ else }}
+  <p style="color:red;">Błąd: Nie znaleziono zdjęcia {{ .Get "src" }} w folderze assets/images/</p>
+{{ end }}
