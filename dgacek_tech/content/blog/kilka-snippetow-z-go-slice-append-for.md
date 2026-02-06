@@ -2,6 +2,7 @@
 date = '2026-02-05T10:50:15+01:00'
 draft = true
 title = 'Kilka snippetów z Go, które testują wiedzę o mechanice języka'
+description = 'Przykłady krótkich programów z Go sprawdzajacych podstawową wiedzę o języku w zakresie Slice, For, Append i String.'
 +++
 
 # Kilkulinijkowce z Go o Slice, Strings, Append i For
