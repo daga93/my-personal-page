@@ -4,13 +4,16 @@
 {{ if $image }}
   {{ $scaled := $image.Resize $params }}
   
-  <figure>
+  <figure style="max-width: 100%; margin: 0 auto;">
     <img src="{{ $scaled.RelPermalink }}" 
          width="{{ $scaled.Width }}" 
          height="{{ $scaled.Height }}" 
-         alt="{{ .Get "alt" }}">
-    {{ with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
+         alt="{{ .Get "alt" }}"
+         style="width: 100%; height: auto; display: block;">
+    {{ with .Get "caption" }}
+      <figcaption style="text-align: center; font-size: 0.8rem;">{{ . }}</figcaption>
+    {{ end }}
   </figure>
 {{ else }}
-  <p style="color:red;">Błąd: Nie znaleziono zdjęcia {{ .Get "src" }} w folderze assets/images/</p>
+  <p style="color:red;">Błąd: Nie znaleziono zdjęcia {{ .Get "src" }}</p>
 {{ end }}

@@ -1,0 +1,53 @@
+<span class="reveal-container">
+  <style>
+    .reveal-container {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      background-color: #303030; 
+      border-radius: 4px;
+      padding: 2px 6px;
+      min-width: 120px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    /* Napis domyślny */
+    .reveal-container::before {
+      content: "Aby zobaczyć rozwiązanie - najedź kursorem tutaj.";
+      font-size: 0.9em;
+      color: #aeaeae;
+      font-weight: bold;
+      transition: opacity 0.2s ease;
+    }
+
+    /* Ukryta treść */
+    .reveal-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      filter: blur(10px);
+      transition: opacity 0.3s ease, filter 0.3s ease;
+      display: flex;
+      background-color: rgb(82, 81, 81); 
+    }
+
+    /* Efekt po najechaniu */
+    .reveal-container:hover::before {
+      opacity: 0;
+    }
+
+    .reveal-container:hover .reveal-content {
+      position: relative; 
+      opacity: 1;
+      filter: blur(0);
+    }
+  </style>
+
+  <span class="reveal-content">
+    {{ if .Inner }}{{ .Inner | markdownify }}{{ else }}{{ .Get "text" }}{{ end }}
+  </span>
+</span>

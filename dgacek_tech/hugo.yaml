@@ -25,3 +25,8 @@ params:
     - url: https://www.linkedin.com/in/dawid-gacek-5a3710a1/
       name: Mój LinkedIn
       icon: brand-linkedin
+
+module:
+  imports:
+    - path: github.com/daga93/hugo-components
+  replacements: "github.com/daga93/hugo-components -> /Users/dawidgacek/Work/Github/hugo-components"
